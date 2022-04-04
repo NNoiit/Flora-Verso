@@ -8,13 +8,11 @@
   background: aliceblue;
 }
 .header{
-  width: 100%;
+  padding: 30px;
   text-align: center;
-  background-color: black;
+  background-color: aliceblue;
 }
-.header img{
-  max-width: 100%;
-}
+
 .header h1{
   font-size: 50px;
   text-align: center;
@@ -23,106 +21,89 @@
 /*menu*/
 .navbar{
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.712);
-  transition: 0.5s;
+  background-color: rgb(243, 66, 96);
 }
 .menu{
   list-style-type: none;
   margin: 0px;
   padding: 0px;
+  background-color: rgb(243, 66, 96);
   display: inline-flex;
-  border-radius: 5px;
+  float: left;
 }
 
+/*link login*/
+.login{
+  float: right;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(243, 66, 96);
+  display: inline-flex;
+}
 
-/*links da barra nav*/
+/*link geral*/
 li a{
   color: aliceblue;
   display: block;
+
   padding: 14px 16px;
-  text-align: right;
+  text-align: center;
   text-decoration: none;
-  transition: 0.5s;
 }
 li a:hover{
   background-color: palevioletred;
 }
-
-/*links do texto central*/
-div.text-center a{
+a{
   color: aliceblue;
   display: block;
+  
   text-align: left;
   text-decoration: none;
 }
 
+
 /*bloco de texto*/
+
 .text-center{
-  background-color: rgba(255, 75, 135, 0.397);
+  background-color: rgb(243, 66, 96);
   border-radius: 9px;
   float: left;
   width: 74%;
   margin-right: 0.5%;
   margin-top: 0.5%;
-  transition: 1s;
   
 }
-
-/*bloco de texto laterais*/
 .text-rigth{
+  background-color: rgb(243, 66, 96);
+  border-radius: 9px;
   float: left;
   width: 25%;
   padding-left: 5px;
   margin-top: 0.5%;
-  
 }
 
-.text-rigth div{
+.albimg{
+
   width: 100%;
   padding: 20px;
   text-align: center;
-  border-radius: 9px;
+  text-decoration-color: rgb(243, 66, 96);
+}
+.albimg:hover{
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  text-decoration-color:black;
+
 }
 
-.text-rigth div a{
-  color: aliceblue;
-  display: inline-block;
-  vertical-align: top;
-  text-decoration: none;
-}
-
-.text-rigth div img{
-  image-orientation: 100%;
-  float: left;
-}
-
-/*personalize album 1*/
-.text-rigth div.albimg-um{
-  background-color: rgb(255, 75, 136);
-}
-
-/*personalize album 2*/
-.text-rigth div.albimg-dois{
-  background-color: rgb(17, 71, 77);
-}
-/*personalize album 3*/
-.text-rigth div.albimg-tres{
-  background-color: rgb(79, 157, 230);
-}
-/*div interna Video de div texto direito*/
-.video{
-  background-color: rgba(0, 0, 0, 0.89);
-  box-sizing: cover;
-  
-}
-
-/*bloco dentro do texto-direito*/
 .cards{
+
   padding: 20px;
   margin-top: 20px;
 }
 
-/*div que cobre toda a pagina*/
 .row:after{
   content: "";
   display:table;
@@ -133,19 +114,6 @@ div.text-center a{
 .footer{
   padding: 20px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.103);
+  background: aliceblue;
   margin-top: 20px;
-}
-
-@media screen and (max-width: 800px){
-  .text-center, .text-rigth {
-    width: 100%;
-    padding: 0;
-  }
-}
-@media screen and (max-width: 400px){
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
 }
