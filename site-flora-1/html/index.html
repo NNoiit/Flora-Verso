@@ -5,26 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Pagina Test</title>
+    <title>Flora Verso</title>
   </head>
   <body>
     <div class="header">
-      <h1>Homenagem Flora</h1>
+      <img src="../img/banner2.png" alt="Flora">
     </div>
     <nav class="navbar">
       <ul class="menu">
         <li><a href="index.html">Home</a></li>  
-        <li><a href="#">Alguns</a></li>  
         <li><a href="#">Lyric</a></li>
       </ul>
 
-      <ul class="login">
-        <li><a href="#">Login</a></li>
-      </ul>
+
     </nav>
-    
+
     <hr>
-    
+
     <div class="row">
       <div class ="text-center">
         <div class="cards">
@@ -40,42 +37,66 @@
 
         <div class="cards">
             <h3>Melhores</h3>
-            <p>
-              <a href="#">Teia</a> <br>
-              <a href="#">Quando você vem</a> <br>
-              <a href="#">Piloto</a> <br>
-              <a href="#">Água perrier</a> <br>
-              <a href="#">10:45</a> <br>
-              <a href="#">Água de côco</a> <br>
-              <a href="#">Me ame em miami</a>
-            </p>
+              <div class="melhores">
+                <p>
+                  <ol>
+                    <li><a href="#">Teia</a>
+                    <li><a href="#">Quando você vem</a>
+                    <li><a href="#">Piloto</a>
+                    <li><a href="#">Água perrier</a>
+                    <li><a href="#">Boy magia</a>
+                  </ol>
+                  <ol start="6">
+                    <li><a href="#">10:45</a>
+                    <li><a href="#">Água de côco</a>
+                    <li><a href="#">Me ame em miami</a>
+                    <li><a href="#">Toca discos</a>
+                  </ol>
+                </p>
+              </div>
           </div>
       </div>
 
 
       <div class ="text-rigth">
-        <div class="albimg">
-          <h3>Eletrocardiograma</h3>
-          <p><img src="#" alt="capa do album eletrocardiograma">
-          blablabla</p>
+        <div class="albimg-um" onclick="alteracorAlmbUm()">
+          <img src="../img/capa-album-1.jpg" alt="capa do album eletrocardiograma">
+          <a href="#">
+              <h3>Eletrocardiograma</h3>
+          </a>
         </div>
       </div>
 
       <div class ="text-rigth">
-          <div class="albimg">
-            <h3>Do lado de Flora</h3>
-            <p><img src="#" alt="capa do album Do lado de Flora">
-            </p>
+          <div class="albimg-dois" onclick="alteracorAlmbDois()">
+            <img src="../img/capa-album-2.png" alt="capa do album Do lado de Flora">
+            <a href="">
+                <h3>Do lado de Flora</h3>
+            </a>
+
           </div>
         </div>
 
         <div class ="text-rigth">
-            <div class="albimg">
-              <h3>Flroa de Controle</h3>
-              <p><img src="#" alt="capa do album Forla de Controle">
-              </p>
+            <div class="albimg-tres" onclick = "alteracorAlmbTres()">
+              <img src="../img/capa-album-3.png" alt="capa do album Forla de Controle">
+              <a href="#">
+                <h3>Flroa de Controle</h3></a>
             </div>
           </div>
+
+          <div class ="text-rigth">
+              <div class="video-album-um">
+                <iframe width="100%" src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_mlsaEKHHZ5Ndp0lAX5ygeSr-jWrc0On9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="video-album-dois">
+                <iframe width="100%" src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_kB6143w8TFytQsBHrvFaizUf9nUFLRxKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="video-album-tres">
+                <iframe width="100%" src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_mjJ-vjKywZMYn5C67XFtokuI-UNIc15VA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+          </div>
+
 
   </div>
   <hr>

@@ -8,11 +8,13 @@
   background: aliceblue;
 }
 .header{
-  padding: 30px;
+  width: 100%;
   text-align: center;
-  background-color: aliceblue;
+  background-color: black;
 }
-
+.header img{
+  max-width: 100%;
+}
 .header h1{
   font-size: 50px;
   text-align: center;
@@ -21,89 +23,129 @@
 /*menu*/
 .navbar{
   overflow: hidden;
-  background-color: rgb(243, 66, 96);
+  background-color: rgba(0, 0, 0, 0.712);
+  transition: 0.5s;
 }
 .menu{
   list-style-type: none;
   margin: 0px;
   padding: 0px;
-  background-color: rgb(243, 66, 96);
   display: inline-flex;
-  float: left;
+  border-radius: 5px;
 }
 
-/*link login*/
-.login{
-  float: right;
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-  background-color: rgb(243, 66, 96);
-  display: inline-flex;
-}
 
-/*link geral*/
+/*links da barra nav*/
 li a{
   color: aliceblue;
   display: block;
-
   padding: 14px 16px;
-  text-align: center;
+  text-align: right;
   text-decoration: none;
+  transition: 0.5s;
 }
 li a:hover{
   background-color: palevioletred;
 }
-a{
+
+/*links do texto central*/
+div.text-center a{
   color: aliceblue;
   display: block;
-  
   text-align: left;
   text-decoration: none;
 }
 
-
 /*bloco de texto*/
-
 .text-center{
-  background-color: rgb(243, 66, 96);
+  background-color: rgba(0, 0, 0, 0.712);
+  color: aliceblue;
   border-radius: 9px;
   float: left;
   width: 74%;
   margin-right: 0.5%;
   margin-top: 0.5%;
-  
+  transition: 0.5s;
 }
+
+.melhores{
+  display: inline-flex;
+}
+.melhores a:hover{
+  background-color: black;
+  border-radius: 9px;;
+}
+
+/*bloco de texto laterais*/
 .text-rigth{
-  background-color: rgb(243, 66, 96);
-  border-radius: 9px;
   float: left;
   width: 25%;
   padding-left: 5px;
   margin-top: 0.5%;
+
 }
 
-.albimg{
-
+.text-rigth div{
   width: 100%;
   padding: 20px;
   text-align: center;
-  text-decoration-color: rgb(243, 66, 96);
-}
-.albimg:hover{
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  text-decoration-color:black;
-
+  border-radius: 9px;
 }
 
+.text-rigth div a{
+  color: aliceblue;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+}
+
+.text-rigth div img{
+  image-orientation: 100%;
+  float: left;
+}
+
+/*personalize album 1*/
+.text-rigth div.albimg-um{
+  background-color: rgb(255, 75, 136);
+}
+
+/*personalize album 2*/
+.text-rigth div.albimg-dois{
+  background-color: rgb(17, 71, 77);
+}
+
+/*personalize album 3*/
+.text-rigth div.albimg-tres{
+  background-color: rgb(79, 157, 230);
+}
+
+/*div interna Video de div texto direito*/
+
+.video-album-um{
+  display: none;
+  background-color: rgba(0, 0, 0, 0.89);
+  box-sizing: cover;
+}
+
+.video-album-dois{
+  display: none;
+  background-color: rgba(0, 0, 0, 0.89);
+  box-sizing: cover;
+}
+
+.video-album-tres{
+  display: none;
+  background-color: rgba(0, 0, 0, 0.89);
+  box-sizing: cover;
+}
+
+/*bloco dentro do texto-direito*/
 .cards{
-
   padding: 20px;
   margin-top: 20px;
 }
 
+/*div que cobre toda a pagina*/
 .row:after{
   content: "";
   display:table;
@@ -114,6 +156,19 @@ a{
 .footer{
   padding: 20px;
   text-align: center;
-  background: aliceblue;
-  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.103);
+  margin-top: 1%;
 }
+
+@media screen and (max-width: 800px){
+  .text-center, .text-rigth {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 400px){
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+} 
